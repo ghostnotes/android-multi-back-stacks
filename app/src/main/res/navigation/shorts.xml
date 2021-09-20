@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shorts"
+    app:startDestination="@id/shortsScreen">
+
+    <fragment
+        android:id="@+id/shortsScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.shorts.ShortsFragment"
+        android:label="@string/title_shorts"
+        tools:layout="@layout/fragment_shorts">
+        <action
+            android:id="@+id/action_shortsScreen_to_shortsDetailScreen"
+            app:destination="@id/shortsDetailScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shortsDetailScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.shorts.ShortsDetailFragment"
+        android:label="@string/title_shorts_detail"
+        tools:layout="@layout/fragment_shorts_detail"/>
+
+</navigation>

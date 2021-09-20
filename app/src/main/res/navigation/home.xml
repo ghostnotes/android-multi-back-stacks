@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeScreen_to_homeDetailScreen"
+            app:destination="@id/homeDetailScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeDetailScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.home.HomeDetailFragment"
+        android:label="@string/title_home_detail"
+        tools:layout="@layout/fragment_home_detail"/>
+
+</navigation>

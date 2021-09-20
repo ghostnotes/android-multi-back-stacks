@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/subscriptions"
+    app:startDestination="@id/subscriptionsScreen">
+
+    <fragment
+        android:id="@+id/subscriptionsScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.subscriptions.SubscriptionsFragment"
+        android:label="@string/title_subscriptions"
+        tools:layout="@layout/fragment_subscriptions">
+        <action
+            android:id="@+id/action_subscriptionsScreen_to_subscriptionsDetailScreen"
+            app:destination="@id/subscriptionsDetailScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/subscriptionsDetailScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.subscriptions.SubscriptionsDetailFragment"
+        android:label="@string/title_subscriptions_detail"
+        tools:layout="@layout/fragment_subscriptions_detail"/>
+
+</navigation>

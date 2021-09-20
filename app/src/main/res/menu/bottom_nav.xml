@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/text_label_home"/>
+    <item
+        android:id="@+id/shorts"
+        android:enabled="true"
+        android:icon="@drawable/ic_shorts"
+        android:title="@string/text_label_shorts"/>
+    <item
+        android:id="@+id/subscriptions"
+        android:enabled="true"
+        android:icon="@drawable/ic_subscriptions"
+        android:title="@string/text_label_subscriptions"/>
+    <item
+        android:id="@+id/library"
+        android:enabled="true"
+        android:icon="@drawable/ic_library"
+        android:title="@string/text_label_library"/>
+</menu>

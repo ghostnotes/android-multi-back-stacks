@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/library"
+    app:startDestination="@id/libraryScreen">
+
+    <fragment
+        android:id="@+id/libraryScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.library.LibraryFragment"
+        android:label="@string/title_library"
+        tools:layout="@layout/fragment_library">
+        <action
+            android:id="@+id/action_libraryScreen_to_libraryDetailScreen"
+            app:destination="@id/libraryDetailScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/libraryDetailScreen"
+        android:name="co.ghostnotes.sample.multibackstacks.ui.library.LibraryDetailFragment"
+        android:label="@string/title_library_detail"
+        tools:layout="@layout/fragment_library_detail"/>
+
+</navigation>

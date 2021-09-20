@@ -17,4 +17,21 @@
 
     <string name="title_library">Library</string>
     <string name="title_library_detail">Library Detail</string>
+
+    <string name="message_home">HOME</string>
+    <string name="message_home_detail">HOME DETAIL</string>
+
+    <string name="message_shorts">SHORTS</string>
+    <string name="message_shorts_detail">SHORTS DETAIL</string>
+
+    <string name="message_subscriptions">SUBSCRIPTIONS</string>
+    <string name="message_subscriptions_detail">SUBSCRIPTIONS DETAIL</string>
+
+    <string name="message_library">LIBRARY</string>
+    <string name="message_library_detail">LIBRARY DETAIL</string>
+
+    <string name="button_home">GO TO DETAIL</string>
+    <string name="button_shorts">GO TO DETAIL</string>
+    <string name="button_subscriptions">GO TO DETAIL</string>
+    <string name="button_library">GO TO DETAIL</string>
 </resources>
